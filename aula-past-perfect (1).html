@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced English Lesson — Past Perfect Dialogue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"]{
+  --color-bg:#f7f6f2; --color-surface:#f9f8f5; --color-surface-2:#fbfbf9;
+  --color-surface-offset:#f3f0ec; --color-divider:#dcd9d5; --color-border:#d4d1ca;
+  --color-text:#28251d; --color-text-muted:#7a7974; --color-text-faint:#bab9b4; --color-text-inverse:#f9f8f4;
+  --color-primary:#01696f; --color-primary-hover:#0c4e54; --color-primary-active:#0f3638; --color-primary-highlight:#cedcd8;
+  --color-gold:#d19900; --color-gold-highlight:#e9e0c6;
+  --radius-sm:.375rem; --radius-md:.5rem; --radius-lg:.75rem; --radius-xl:1rem; --radius-full:9999px;
+  --shadow-sm:0 1px 2px oklch(0.2 0.01 80/.06); --shadow-md:0 4px 12px oklch(0.2 0.01 80/.08); --shadow-lg:0 12px 32px oklch(0.2 0.01 80/.12);
+  --font-display:'Instrument Serif',Georgia,serif; --font-body:'Work Sans','Helvetica Neue',sans-serif;
+}
+[data-theme="dark"]{
+  --color-bg:#171614; --color-surface:#1c1b19; --color-surface-2:#201f1d; --color-surface-offset:#1d1c1a;
+  --color-divider:#262523; --color-border:#393836; --color-text:#cdccca; --color-text-muted:#797876; --color-text-faint:#5a5957; --color-text-inverse:#2b2a28;
+  --color-primary:#4f98a3; --color-primary-hover:#227f8b; --color-primary-active:#1a626b; --color-primary-highlight:#313b3b;
+  --color-gold:#e8af34; --color-gold-highlight:#4d4332;
+  --shadow-sm:0 1px 2px oklch(0 0 0/.2); --shadow-md:0 4px 12px oklch(0 0 0/.3); --shadow-lg:0 12px 32px oklch(0 0 0/.4);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:none;scroll-behavior:smooth}
+body{min-height:100dvh;font-family:var(--font-body);font-size:clamp(1rem,0.95rem + 0.25vw,1.125rem);color:var(--color-text);background:var(--color-bg);line-height:1.6;padding-bottom:4rem}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in oklab,var(--color-bg) 85%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--color-divider);padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:1.3rem}
+.brand svg{width:28px;height:28px}
+.theme-toggle{width:38px;height:38px;border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;border:1px solid var(--color-border);transition:.18s}
+.theme-toggle:hover{background:var(--color-surface-offset)}
+
+.wrap{max-width:820px;margin:0 auto;padding:0 1.25rem}
+
+.hero{padding:clamp(2.5rem,6vw,4.5rem) 0 2rem;text-align:left}
+.tag{display:inline-block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-highlight);padding:.3rem .8rem;border-radius:var(--radius-full);margin-bottom:1.2rem}
+h1{font-family:var(--font-display);font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.1;margin-bottom:.8rem}
+.hero p{color:var(--color-text-muted);max-width:60ch;font-size:1.05rem}
+
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow-sm);margin-bottom:1.5rem}
+.card h2{font-family:var(--font-display);font-size:1.4rem;margin-bottom:.7rem}
+.card h3{font-size:1rem;margin:.9rem 0 .4rem;color:var(--color-primary)}
+.card ul{list-style:none;padding-left:0}
+.card li{padding:.35rem 0;border-bottom:1px solid var(--color-divider);font-size:.95rem}
+.card li:last-child{border-bottom:none}
+.card li b{color:var(--color-primary)}
+
+.audio-panel{display:flex;align-items:center;gap:1rem;background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem 1.25rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.play-btn{width:52px;height:52px;border-radius:var(--radius-full);background:var(--color-primary);color:var(--color-text-inverse);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.18s;box-shadow:var(--shadow-sm)}
+.play-btn:hover{background:var(--color-primary-hover)}
+.play-btn svg{width:22px;height:22px}
+.audio-info{flex:1;min-width:180px}
+.audio-info strong{display:block;font-size:.95rem}
+.audio-info span{color:var(--color-text-muted);font-size:.85rem}
+.speed-select{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:.4rem .6rem;background:var(--color-surface);font-size:.85rem}
+.progress-mini{height:4px;background:var(--color-divider);border-radius:var(--radius-full);overflow:hidden;margin-top:.4rem;width:100%}
+.progress-mini-fill{height:100%;background:var(--color-primary);width:0%;transition:width .2s linear}
+
+.dialogue{display:flex;flex-direction:column;gap:.9rem}
+.line{display:flex;gap:.8rem;align-items:flex-start;padding:.9rem 1rem;border-radius:var(--radius-lg);border:1px solid transparent;transition:.25s}
+.line.active{background:var(--color-primary-highlight);border-color:var(--color-primary)}
+.avatar{width:42px;height:42px;border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;flex-shrink:0;color:var(--color-text-inverse)}
+.avatar.karl{background:var(--color-primary)}
+.avatar.manoel{background:var(--color-gold)}
+.line-body{flex:1}
+.speaker{font-weight:600;font-size:.85rem;margin-bottom:.15rem;display:flex;align-items:center;gap:.5rem}
+.line-btn{width:26px;height:26px;border-radius:var(--radius-full);border:1px solid var(--color-border);display:flex;align-items:center;justify-content:center}
+.line-btn svg{width:12px;height:12px}
+.line-text{font-size:1rem}
+.pp{color:var(--color-primary);font-weight:700;border-bottom:2px solid var(--color-primary-highlight)}
+.pt{color:var(--color-text-muted);font-size:.88rem;margin-top:.35rem;font-style:italic}
+
+.grammar-box{background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.25rem;margin-top:.5rem}
+.grammar-box code{background:var(--color-surface-2);padding:.15rem .4rem;border-radius:var(--radius-sm);font-size:.9em}
+
+.exercise{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem;margin-bottom:.8rem;background:var(--color-surface-2)}
+.exercise p{margin-bottom:.6rem;font-size:.95rem}
+.exercise input{width:100%;padding:.55rem .7rem;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface);font-size:.95rem}
+.exercise input.correct{border-color:var(--color-primary);background:var(--color-primary-highlight)}
+.exercise input.wrong{border-color:#a12c7b}
+.feedback-line{margin-top:.4rem;font-size:.85rem;font-weight:600;min-height:1.2em}
+.check-btn{margin-top:1rem;background:var(--color-primary);color:var(--color-text-inverse);padding:.6rem 1.4rem;border-radius:var(--radius-full);font-size:.9rem;font-weight:600}
+.check-btn:hover{background:var(--color-primary-hover)}
+.result-msg{margin-top:.8rem;font-size:.9rem;font-weight:600}
+
+footer{text-align:center;color:var(--color-text-faint);font-size:.8rem;padding:2rem 0}
+
+@media (max-width:600px){
+  .avatar{width:36px;height:36px;font-size:.95rem}
+  .line{padding:.7rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    <span>PastPerfect<b style="color:var(--color-primary)">.</b></span>
+  </div>
+  <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="tag">Advanced Lesson · Past Perfect</span>
+    <h1>Karl &amp; Manoel Talk About Regret and Discovery</h1>
+    <p>An advanced-level dialogue built entirely around the Past Perfect tense (<code>had + past participle</code>). Listen to the full conversation, study the grammar notes, then test yourself with the exercises below.</p>
+  </section>
+
+  <div class="audio-panel">
+    <button class="play-btn" id="playAllBtn" aria-label="Play full dialogue">
+      <svg id="playAllIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <div class="audio-info">
+      <strong>Listen to the full dialogue</strong>
+      <span id="statusText">Ready — English audio (browser voice)</span>
+      <div class="progress-mini"><div class="progress-mini-fill" id="progressFill"></div></div>
+    </div>
+    <select class="speed-select" id="speedSelect" aria-label="Playback speed">
+      <option value="0.8">0.8x (slower)</option>
+      <option value="1" selected>1x (normal)</option>
+      <option value="1.15">1.15x (faster)</option>
+    </select>
+  </div>
+
+  <section class="card">
+    <h2>Dialogue</h2>
+    <p style="color:var(--color-text-muted);font-size:.9rem;margin-bottom:1rem">Click the small play icon on any line to listen to it individually. Past Perfect forms are highlighted in <span class="pp">teal bold</span>.</p>
+    <div class="dialogue" id="dialogue"></div>
+  </section>
+
+  <section class="card">
+    <h2>Grammar Focus — The Past Perfect</h2>
+    <div class="grammar-box">
+      <p><b>Form:</b> subject + <code>had</code> + past participle (e.g., <code>had finished</code>, <code>had gone</code>, <code>had never seen</code>).</p>
+      <h3>When we use it</h3>
+      <ul>
+        <li><b>1.</b> An action completed before another past action or moment — "By the time Karl arrived, Manoel <b>had already left</b>."</li>
+        <li><b>2.</b> Reported speech / narrative background — explaining what happened earlier in a story.</li>
+        <li><b>3.</b> Regret or unreal past conditions — "I wish I <b>had known</b> sooner."</li>
+        <li><b>4.</b> With time markers like <i>already, never, by the time, before, after, until</i>.</li>
+      </ul>
+      <h3>Common mistake to avoid</h3>
+      <p>Don't confuse it with the simple past. <em>"He had eaten"</em> shows the eating finished before another past reference point. <em>"He ate"</em> is just one past action with no second reference point.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Practice — Complete with Past Perfect</h2>
+    <p style="color:var(--color-text-muted);font-size:.9rem;margin-bottom:1rem">Fill each gap using the Past Perfect form of the verb in brackets. Click "Check answers" when ready.</p>
+    <div id="exercises"></div>
+    <button class="check-btn" id="checkBtn">Check answers</button>
+    <p class="result-msg" id="resultMsg"></p>
+  </section>
+</div>
+
+<footer>Advanced English lesson · Past Perfect dialogue · Built for self-study</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+  });
+})();
+
+const dialogueData = [
+  {speaker:"Karl", text:"Manoel, you look exhausted. What happened last night?", plain:"Manoel, you look exhausted. What happened last night?"},
+  {speaker:"Manoel", text:"Honestly, by the time I got home, I <span class='pp'>had already worked</span> a fourteen-hour shift.", plain:"Honestly, by the time I got home, I had already worked a fourteen-hour shift."},
+  {speaker:"Karl", text:"Fourteen hours? Why so long? Had something gone wrong at the office?", plain:"Fourteen hours? Why so long? Had something gone wrong at the office?"},
+  {speaker:"Manoel", text:"Yes. The client <span class='pp'>had changed</span> the entire proposal just an hour before the deadline, and we <span class='pp'>hadn't finished</span> the revised version yet.", plain:"Yes. The client had changed the entire proposal just an hour before the deadline, and we hadn't finished the revised version yet."},
+  {speaker:"Karl", text:"That's rough. I remember something similar happening to me two years ago. I <span class='pp'>had spent</span> weeks preparing a presentation, and the board <span class='pp'>had decided</span> to cancel the meeting without telling me.", plain:"That's rough. I remember something similar happening to me two years ago. I had spent weeks preparing a presentation, and the board had decided to cancel the meeting without telling me."},
+  {speaker:"Manoel", text:"Ha! At least you <span class='pp'>hadn't stayed</span> up all night for nothing, like I did.", plain:"Ha! At least you hadn't stayed up all night for nothing, like I did."},
+  {speaker:"Karl", text:"True. But looking back, I wish I <span class='pp'>had asked</span> more questions before the project even started. If I <span class='pp'>had known</span> the client's real expectations, none of that confusion would have happened.", plain:"True. But looking back, I wish I had asked more questions before the project even started. If I had known the client's real expectations, none of that confusion would have happened."},
+  {speaker:"Manoel", text:"Exactly my situation. Once the client <span class='pp'>had explained</span> what they truly wanted, everything suddenly made sense — but by then, we <span class='pp'>had already wasted</span> half the night.", plain:"Exactly my situation. Once the client had explained what they truly wanted, everything suddenly made sense — but by then, we had already wasted half the night."},
+  {speaker:"Karl", text:"Had you ever worked with this client before, or was it your first project together?", plain:"Had you ever worked with this client before, or was it your first project together?"},
+  {speaker:"Manoel", text:"We <span class='pp'>had collaborated</span> once before, last year, but that project <span class='pp'>had gone</span> smoothly from start to finish. I never expected this level of chaos.", plain:"We had collaborated once before, last year, but that project had gone smoothly from start to finish. I never expected this level of chaos."},
+  {speaker:"Karl", text:"Well, at least you learned something. By the end of the night, you <span class='pp'>had probably become</span> an expert in last-minute crisis management.", plain:"Well, at least you learned something. By the end of the night, you had probably become an expert in last-minute crisis management."},
+  {speaker:"Manoel", text:"That's one way to look at it! Next time, though, I'll make sure I <span class='pp'>have clarified</span> everything long before the deadline arrives.", plain:"That's one way to look at it! Next time, though, I'll make sure I have clarified everything long before the deadline arrives."}
+];
+
+const dialogueEl = document.getElementById('dialogue');
+let voices = [];
+function loadVoices(){ voices = speechSynthesis.getVoices(); }
+loadVoices();
+if ('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices;
+
+function pickVoice(name){
+  const preferred = voices.filter(v => v.lang.startsWith('en'));
+  if(!preferred.length) return null;
+  const male = preferred.find(v => /male|david|mark|daniel/i.test(v.name));
+  const female = preferred.find(v => /female|zira|samantha|susan/i.test(v.name));
+  if(name === 'Karl') return male || preferred[0];
+  return female || preferred[Math.min(1,preferred.length-1)] || preferred[0];
+}
+
+dialogueData.forEach((d, i) => {
+  const line = document.createElement('div');
+  line.className = 'line';
+  line.id = 'line-' + i;
+  const initials = d.speaker === 'Karl' ? 'K' : 'M';
+  line.innerHTML = `
+    <div class="avatar ${d.speaker.toLowerCase()}">${initials}</div>
+    <div class="line-body">
+      <div class="speaker">${d.speaker}
+        <button class="line-btn" aria-label="Play this line" data-idx="${i}">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <div class="line-text">${d.text}</div>
+    </div>`;
+  dialogueEl.appendChild(line);
+});
+
+document.querySelectorAll('.line-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    speechSynthesis.cancel();
+    const idx = parseInt(btn.dataset.idx);
+    speakLine(idx, () => {});
+  });
+});
+
+function speakLine(idx, onEnd){
+  const d = dialogueData[idx];
+  document.querySelectorAll('.line').forEach(l => l.classList.remove('active'));
+  const el = document.getElementById('line-'+idx);
+  el.classList.add('active');
+  el.scrollIntoView({behavior:'smooth', block:'center'});
+  const utter = new SpeechSynthesisUtterance(d.plain);
+  const v = pickVoice(d.speaker);
+  if (v) utter.voice = v;
+  utter.rate = parseFloat(document.getElementById('speedSelect').value);
+  utter.lang = 'en-US';
+  utter.onend = () => { el.classList.remove('active'); onEnd && onEnd(); };
+  speechSynthesis.speak(utter);
+}
+
+let playing = false;
+let currentIdx = 0;
+const playAllBtn = document.getElementById('playAllBtn');
+const playAllIcon = document.getElementById('playAllIcon');
+const statusText = document.getElementById('statusText');
+const progressFill = document.getElementById('progressFill');
+
+function playNext(){
+  if (currentIdx >= dialogueData.length){
+    playing = false;
+    currentIdx = 0;
+    playAllIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+    statusText.textContent = 'Finished — click play to listen again';
+    progressFill.style.width = '0%';
+    document.querySelectorAll('.line').forEach(l => l.classList.remove('active'));
+    return;
+  }
+  statusText.textContent = `Playing line ${currentIdx+1} of ${dialogueData.length} — ${dialogueData[currentIdx].speaker}`;
+  progressFill.style.width = ((currentIdx)/dialogueData.length*100) + '%';
+  speakLine(currentIdx, () => {
+    currentIdx++;
+    if (playing) playNext();
+  });
+}
+
+playAllBtn.addEventListener('click', () => {
+  if (playing){
+    speechSynthesis.cancel();
+    playing = false;
+    playAllIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+    statusText.textContent = 'Paused';
+    document.querySelectorAll('.line').forEach(l => l.classList.remove('active'));
+    return;
+  }
+  playing = true;
+  playAllIcon.innerHTML = '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>';
+  playNext();
+});
+
+document.getElementById('speedSelect').addEventListener('change', () => {
+  if (playing){
+    speechSynthesis.cancel();
+    playNext();
+  }
+});
+
+const exercisesData = [
+  {before:"By the time the meeting started, Karl ", verb:"(finish)", after:" his report.", answer:"had finished"},
+  {before:"Manoel told me that he ", verb:"(never work)", after:" such long hours before.", answer:"had never worked"},
+  {before:"", verb:"(you / see)", after:" the contract before you signed it?", answer:"Had you seen"},
+  {before:"If the client ", verb:"(explain)", after:" the requirements earlier, they wouldn't have wasted the night.", answer:"had explained"},
+  {before:"After they ", verb:"(discuss)", after:" the problem for hours, they finally found a solution.", answer:"had discussed"}
+];
+
+const exContainer = document.getElementById('exercises');
+exercisesData.forEach((ex, i) => {
+  const div = document.createElement('div');
+  div.className = 'exercise';
+  div.innerHTML = `<p>${i+1}. ${ex.before}<strong>${ex.verb}</strong>${ex.after}</p>
+    <input type="text" id="ex-${i}" placeholder="Type the Past Perfect form..." autocomplete="off">
+    <p class="feedback-line" id="fb-${i}" aria-live="polite"></p>`;
+  exContainer.appendChild(div);
+});
+
+function normalize(str){
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/[.,!?;:]/g,'')
+    .replace(/\s+/g,' ');
+}
+
+document.getElementById('checkBtn').addEventListener('click', () => {
+  let correctCount = 0;
+  exercisesData.forEach((ex, i) => {
+    const input = document.getElementById('ex-'+i);
+    const fb = document.getElementById('fb-'+i);
+    const val = normalize(input.value);
+    const ans = normalize(ex.answer);
+    const isCorrect = val.length > 0 && val === ans;
+    input.classList.remove('wrong','correct');
+    if (isCorrect){
+      input.classList.add('correct');
+      correctCount++;
+      fb.textContent = '✓ Correct!';
+      fb.style.color = 'var(--color-primary)';
+    } else {
+      input.classList.add('wrong');
+      fb.textContent = val.length === 0
+        ? `✗ Empty — correct answer: "${ex.answer}"`
+        : `✗ Not quite — correct answer: "${ex.answer}"`;
+      fb.style.color = '#a12c7b';
+    }
+  });
+  const msg = document.getElementById('resultMsg');
+  msg.textContent = `You got ${correctCount} out of ${exercisesData.length} correct.`;
+  msg.style.color = correctCount === exercisesData.length ? 'var(--color-primary)' : '#a12c7b';
+  msg.scrollIntoView({behavior:'smooth', block:'nearest'});
+});
+</script>
+</body>
+</html>
